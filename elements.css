@@ -34,7 +34,7 @@ MADE ON JUNE 22, 2020 */
     "hydrogen . . . legend legend details details . . . . . . . . . helium"
     "lithium beryllium . . legend legend details details . . . . boron carbon nitrogen oxygen fluorine neon"
     "sodium magnesium . . . . . . . . . . aluminum silicon phosphorus sulfur chlorine argon"
-    "potassium calcium scandium titanium vanadum chromium manganese iron cobalt nickel copper zinc gallum germanium arsenic selenium bromine krypton"
+    "potassium calcium scandium titanium vanadum chromium manganese iron cobalt nickel copper zinc gallium germanium arsenic selenium bromine krypton"
     "rubidium stronium yttrium zirconium niobium molybdenum technetium rethenium rhodium palladium silver cadmium indium tin antimony tellurium iodine xenon"
     "cesium barium asterisk-one hafnium tantalum tungsten rhenium osmium iridium platinum gold mercury thallium lead bismuth polonium astatine radon"
     "francium radium asterisk-two rutherfordium dubnium seaborgium bohrium hassium meitnerium darmstadtium roentgenium copernicum nihonium flerovium mosconium livermorium tennessine ognesson"
@@ -298,8 +298,8 @@ MADE ON JUNE 22, 2020 */
   cursor: pointer;
 }
 
-.gallum {
-  grid-area: gallum;
+.gallium {
+  grid-area: gallium;
   background: var(--posttransition);
   cursor: pointer;
 }
