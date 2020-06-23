@@ -1,0 +1,128 @@
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 20px;
+    width: 400px;
+    margin: 5% auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px rgba(0, 0, 0, 0.2);
+    animation: openModal 0.5s ease;
+}
+
+@keyframes openModal {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.closeBtn {
+    font-size: 30px;
+    float: right;
+    color: #cccccc;
+    transition: 0.2s ease;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header p {
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.modal-body {
+    display: block;
+}
+
+.modal-open {
+    display: block;
+}
+
+/* Element Properties */
+.element {
+    background: var(--nonmetal);
+    width: 330px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.element-properties {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-atomic-number {
+    font-size: 18px;
+    padding-top: 12px;
+}
+
+.element-symbol {
+    font-size: 50px;
+    padding: 0;
+    font-weight: 700;
+}
+
+.element-name {
+    font-size: 20px;
+}
+
+.element-chem-group-block {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody {
+    display: block;
+    margin: 0 auto;
+}
+
+th {
+    text-align: left;
+    color: #2e2e2e;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+td {
+    text-align: right;
+    color: rgb(26, 88, 112);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+tr.border {
+    border-bottom: 1px solid rgb(235, 235, 235);
+}

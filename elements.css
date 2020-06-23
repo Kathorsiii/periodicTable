@@ -1,0 +1,852 @@
+/* PERIODIC TABLE OF ELEMENTS USING CSS GRID
+BY KATHERINE THERESE MARIE E MARINAS
+MADE ON JUNE 22, 2020 */
+
+:root {
+  --nonmetal: linear-gradient(to right, #ffffcb, #ffffb6);
+  --noblegas: linear-gradient(to right, #ffcbcb, #ffc1c1);
+  --alkalimetal: linear-gradient(to right, #ffcbcb, #ffc1c1);
+  --alkalineearth: linear-gradient(to right, #d7d7ff, #d0d0ff);
+  --transition: linear-gradient(to right, #cae5ff, #b4daff);
+  --metallloid: linear-gradient(to right, #e7f2ca, #ddecb5);
+  --posttransition: linear-gradient(to right, #c9ffc9, #b4ffb4);
+  --halogen: linear-gradient(to right, #ffffc9, #ffffb4);
+  --lanthanide: linear-gradient(to right, #bcffff, #a7ffff);
+  --actinide: linear-gradient(to right, #cdffee, #beffea);
+  --detail-color: #4b4b4b;
+}
+/* .container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* grid-template-rows: 100px 100px; */
+/* Explicitly created two rows 100px 100px*/
+/* grid-auto-rows: 100px; */
+/* All rows are created implicitly and they are always 100px tall */
+/* } */
+
+.row-1 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(18, minmax(70px, 1fr));
+  grid-auto-rows: 85px;
+  grid-template-areas:
+    "hydrogen . . . legend legend details details . . . . . . . . . helium"
+    "lithium beryllium . . legend legend details details . . . . boron carbon nitrogen oxygen fluorine neon"
+    "sodium magnesium . . . . . . . . . . aluminum silicon phosphorus sulfur chlorine argon"
+    "potassium calcium scandium titanium vanadum chromium manganese iron cobalt nickel copper zinc gallum germanium arsenic selenium bromine krypton"
+    "rubidium stronium yttrium zirconium niobium molybdenum technetium rethenium rhodium palladium silver cadmium indium tin antimony tellurium iodine xenon"
+    "cesium barium asterisk-one hafnium tantalum tungsten rhenium osmium iridium platinum gold mercury thallium lead bismuth polonium astatine radon"
+    "francium radium asterisk-two rutherfordium dubnium seaborgium bohrium hassium meitnerium darmstadtium roentgenium copernicum nihonium flerovium mosconium livermorium tennessine ognesson"
+    /* ". . . . . . . . . . . . . . . . . ." */
+    ". . asterisk-one-one lanthanum cerium praseodymium neodymium promethium samarium europium gadolinium terbium dysprosium holmium erbium thulium ytterbium lutetium"
+    ". . asterisk-two-two actinium thorium proctactinium uranium neptunium plutonium americium curium berkelium californium einsteinium fermium mendelevium nobelium lawrencium";
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.info .atom-number {
+  font-size: 14px;
+}
+
+.info .name {
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+.info .chem-group-block {
+  font-size: 10px;
+  padding-top: 7px;
+}
+
+.legend .info .atom-number{
+  font-size: 20px;
+}
+
+.legend .info h1.symbol {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.legend .info .name {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.legend .info .chem-group-block {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.details .info-deets .atom-num-deets {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.details .info-deets .symbol-deets {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.details .info-deets .name-deets {
+  padding-bottom: 5px;
+}
+
+.details .info-deets .chem-block-deets {
+  font-size: 14px;
+}
+
+/* First Row */
+.hydrogen {
+  grid-area: hydrogen;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.helium {
+  grid-area: helium;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+.legend {
+  grid-area: legend;
+  background: var(--nonmetal);
+}
+
+.details {
+  grid-area: details;
+  color: var(--detail-color);
+  padding-left: 10px;
+}
+
+/* Second Row */
+.lithium {
+  grid-area: lithium;
+  background: var(--alkalimetal);
+  cursor: pointer;
+}
+
+.beryllium {
+  grid-area: beryllium;
+  background: var(--alkalineearth);
+  cursor: pointer;
+}
+
+.boron {
+  grid-area: boron;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.carbon {
+  grid-area: carbon;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.nitrogen {
+  grid-area: nitrogen;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.oxygen {
+  grid-area: oxygen;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.fluorine {
+  grid-area: fluorine;
+  background: var(--halogen);
+  cursor: pointer;
+}
+
+.neon {
+  grid-area: neon;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+/* Third Row */
+.sodium {
+  grid-area: sodium;
+  background: var(--alkalimetal);
+  cursor: pointer;
+}
+
+.magnesium {
+  grid-area: magnesium;
+  background: var(--alkalineearth);
+  cursor: pointer;
+}
+
+.aluminum {
+  grid-area: aluminum;
+  background: var(--posttransition);
+  cursor: pointer;
+}
+
+.silicon {
+  grid-area: silicon;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.phosphorus {
+  grid-area: phosphorus;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.sulfur {
+  grid-area: sulfur;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.chlorine {
+  grid-area: chlorine;
+  background: var(--halogen);
+  cursor: pointer;
+}
+
+.argon {
+  grid-area: argon;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+/* Fourth Row */
+.potassium {
+  grid-area: potassium;
+  background: var(--alkalimetal);
+  cursor: pointer;
+}
+
+.calcium {
+  grid-area: calcium;
+  background: var(--alkalineearth);
+  cursor: pointer;
+}
+
+.scandium {
+  grid-area: scandium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.titanium {
+  grid-area: titanium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.vanadum {
+  grid-area: vanadum;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.chromium {
+  grid-area: chromium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.manganese {
+  grid-area: manganese;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.iron {
+  grid-area: iron;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.cobalt {
+  grid-area: cobalt;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.nickel {
+  grid-area: nickel;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.copper {
+  grid-area: copper;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.zinc {
+  grid-area: zinc;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.gallum {
+  grid-area: gallum;
+  background: var(--posttransition);
+  cursor: pointer;
+}
+
+.germanium {
+  grid-area: germanium;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.arsenic {
+  grid-area: arsenic;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.selenium {
+  grid-area: selenium;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.bromine {
+  grid-area: bromine;
+  background: var(--halogen);
+  cursor: pointer;
+}
+
+.krypton {
+  grid-area: krypton;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+/* Fifth Row */
+.rubidium {
+  grid-area: rubidium;
+  background: var(--alkalimetal);
+  cursor: pointer;
+}
+
+.stronium {
+  grid-area: stronium;
+  background: var(--alkalineearth);
+  cursor: pointer;
+}
+
+.yttrium {
+  grid-area: yttrium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.zirconium {
+  grid-area: zirconium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.niobium {
+  grid-area: niobium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.molybdenum {
+  grid-area: molybdenum;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.technetium {
+  grid-area: technetium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.rethenium {
+  grid-area: rethenium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.rhodium {
+  grid-area: rhodium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.palladium {
+  grid-area: palladium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.silver {
+  grid-area: silver;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.cadmium {
+  grid-area: cadmium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.indium {
+  grid-area: indium;
+  background: var(--posttransition);
+  cursor: pointer;
+}
+
+.tin {
+  grid-area: tin;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.antimony {
+  grid-area: antimony;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.tellurium {
+  grid-area: tellurium;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.iodine {
+  grid-area: iodine;
+  background: var(--halogen);
+  cursor: pointer;
+}
+
+.xenon {
+  grid-area: xenon;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+/* Sixth Row */
+.cesium {
+  grid-area: cesium;
+  background: var(--alkalimetal);
+  cursor: pointer;
+}
+
+.barium {
+  grid-area: barium;
+  background: var(--alkalineearth);
+  cursor: pointer;
+}
+
+.asterisk-one {
+  grid-area: asterisk-one;
+}
+
+.hafnium {
+  grid-area: hafnium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.tantalum {
+  grid-area: tantalum;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.tungsten {
+  grid-area: tungsten;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.rhenium {
+  grid-area: rhenium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.osmium {
+  grid-area: osmium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.iridium {
+  grid-area: iridium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.platinum {
+  grid-area: platinum;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.gold {
+  grid-area: gold;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.mercury {
+  grid-area: mercury;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.thallium {
+  grid-area: thallium;
+  background: var(--posttransition);
+  cursor: pointer;
+}
+
+.lead {
+  grid-area: lead;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.bismuth {
+  grid-area: bismuth;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.polonium {
+  grid-area: polonium;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.astatine {
+  grid-area: astatine;
+  background: var(--halogen);
+  cursor: pointer;
+}
+
+.radon {
+  grid-area: radon;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+/* Seventh Row */
+.francium {
+  grid-area: francium;
+  background: var(--alkalimetal);
+  cursor: pointer;
+}
+
+.radium {
+  grid-area: radium;
+  background: var(--alkalineearth);
+  cursor: pointer;
+}
+
+.asterisk-two {
+  grid-area: asterisk-two;
+}
+
+.rutherfordium {
+  grid-area: rutherfordium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.dubnium {
+  grid-area: dubnium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.seaborgium {
+  grid-area: seaborgium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.bohrium {
+  grid-area: bohrium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.hassium {
+  grid-area: hassium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.meitnerium {
+  grid-area: meitnerium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.darmstadtium {
+  grid-area: darmstadtium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.roentgenium {
+  grid-area: roentgenium;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.copernicum {
+  grid-area: copernicum;
+  background: var(--transition);
+  cursor: pointer;
+}
+
+.nihonium {
+  grid-area: nihonium;
+  background: var(--posttransition);
+  cursor: pointer;
+}
+
+.flerovium {
+  grid-area: flerovium;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.mosconium {
+  grid-area: mosconium;
+  background: var(--metallloid);
+  cursor: pointer;
+}
+
+.livermorium {
+  grid-area: livermorium;
+  background: var(--nonmetal);
+  cursor: pointer;
+}
+
+.tennessine {
+  grid-area: tennessine;
+  background: var(--halogen);
+  cursor: pointer;
+}
+
+.ognesson {
+  grid-area: ognesson;
+  background: var(--noblegas);
+  cursor: pointer;
+}
+
+/* Eight Row */
+.asterisk-one-one {
+  grid-area: asterisk-one-one;
+  display: flex;
+  justify-self: right;
+}
+
+.lanthanum {
+  grid-area: lanthanum;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.cerium {
+  grid-area: cerium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.praseodymium {
+  grid-area: praseodymium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.neodymium {
+  grid-area: neodymium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.promethium {
+  grid-area: promethium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.samarium {
+  grid-area: samarium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.europium {
+  grid-area: europium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.gadolinium {
+  grid-area: gadolinium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.terbium {
+  grid-area: terbium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.dysprosium {
+  grid-area: dysprosium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.holmium {
+  grid-area: holmium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.erbium {
+  grid-area: erbium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.thulium {
+  grid-area: thulium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.ytterbium {
+  grid-area: ytterbium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+.lutetium {
+  grid-area: lutetium;
+  background: var(--lanthanide);
+  cursor: pointer;
+}
+
+/* Ninth Row */
+.asterisk-two-two {
+  grid-area: asterisk-two-two;
+  display: flex;
+  justify-self: right;
+}
+
+.actinium {
+  grid-area: actinium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.thorium {
+  grid-area: thorium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.proctactinium {
+  grid-area: proctactinium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.uranium {
+  grid-area: uranium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.neptunium {
+  grid-area: neptunium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.plutonium {
+  grid-area: plutonium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.americium {
+  grid-area: americium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.curium {
+  grid-area: curium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.berkelium {
+  grid-area: berkelium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.californium {
+  grid-area: californium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.einsteinium {
+  grid-area: einsteinium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.fermium {
+  grid-area: fermium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.mendelevium {
+  grid-area: mendelevium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.nobelium {
+  grid-area: nobelium;
+  background: var(--actinide);
+  cursor: pointer;
+}
+
+.lawrencium {
+  grid-area: lawrencium;
+  background: var(--actinide);
+  cursor: pointer;
+}
