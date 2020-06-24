@@ -37,7 +37,7 @@ MADE ON JUNE 22, 2020 */
     "potassium calcium scandium titanium vanadum chromium manganese iron cobalt nickel copper zinc gallium germanium arsenic selenium bromine krypton"
     "rubidium stronium yttrium zirconium niobium molybdenum technetium rethenium rhodium palladium silver cadmium indium tin antimony tellurium iodine xenon"
     "cesium barium asterisk-one hafnium tantalum tungsten rhenium osmium iridium platinum gold mercury thallium lead bismuth polonium astatine radon"
-    "francium radium asterisk-two rutherfordium dubnium seaborgium bohrium hassium meitnerium darmstadtium roentgenium copernicum nihonium flerovium mosconium livermorium tennessine ognesson"
+    "francium radium asterisk-two rutherfordium dubnium seaborgium bohrium hassium meitnerium darmstadtium roentgenium copernicium nihonium flerovium moscovium livermorium tennessine oganesson"
     /* ". . . . . . . . . . . . . . . . . ." */
     ". . asterisk-one-one lanthanum cerium praseodymium neodymium promethium samarium europium gadolinium terbium dysprosium holmium erbium thulium ytterbium lutetium"
     ". . asterisk-two-two actinium thorium proctactinium uranium neptunium plutonium americium curium berkelium californium einsteinium fermium mendelevium nobelium lawrencium";
@@ -615,8 +615,8 @@ MADE ON JUNE 22, 2020 */
   cursor: pointer;
 }
 
-.copernicum {
-  grid-area: copernicum;
+.copernicium {
+  grid-area: copernicium;
   background: var(--transition);
   cursor: pointer;
 }
@@ -633,8 +633,8 @@ MADE ON JUNE 22, 2020 */
   cursor: pointer;
 }
 
-.mosconium {
-  grid-area: mosconium;
+.moscovium {
+  grid-area: moscovium;
   background: var(--posttransition);
   cursor: pointer;
 }
@@ -651,8 +651,8 @@ MADE ON JUNE 22, 2020 */
   cursor: pointer;
 }
 
-.ognesson {
-  grid-area: ognesson;
+.oganesson {
+  grid-area: oganesson;
   background: var(--noblegas);
   cursor: pointer;
 }
