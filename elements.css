@@ -415,7 +415,7 @@ MADE ON JUNE 22, 2020 */
 
 .tin {
   grid-area: tin;
-  background: var(--metallloid);
+  background: var(--posttransition);
   cursor: pointer;
 }
 
@@ -427,7 +427,7 @@ MADE ON JUNE 22, 2020 */
 
 .tellurium {
   grid-area: tellurium;
-  background: var(--nonmetal);
+  background: var(--metallloid);
   cursor: pointer;
 }
 
@@ -522,19 +522,19 @@ MADE ON JUNE 22, 2020 */
 
 .lead {
   grid-area: lead;
-  background: var(--metallloid);
+  background: var(--posttransition);
   cursor: pointer;
 }
 
 .bismuth {
   grid-area: bismuth;
-  background: var(--metallloid);
+  background: var(--posttransition);
   cursor: pointer;
 }
 
 .polonium {
   grid-area: polonium;
-  background: var(--nonmetal);
+  background: var(--metallloid);
   cursor: pointer;
 }
 
@@ -629,19 +629,19 @@ MADE ON JUNE 22, 2020 */
 
 .flerovium {
   grid-area: flerovium;
-  background: var(--metallloid);
+  background: var(--posttransition);
   cursor: pointer;
 }
 
 .mosconium {
   grid-area: mosconium;
-  background: var(--metallloid);
+  background: var(--posttransition);
   cursor: pointer;
 }
 
 .livermorium {
   grid-area: livermorium;
-  background: var(--nonmetal);
+  background: var(--posttransition);
   cursor: pointer;
 }
 
