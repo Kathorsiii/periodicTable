@@ -1,37 +1,28 @@
-// var modal = document.getElementById('simpleModal');
-// var modalBtn = document.getElementById('modalBtn');
-// var closeBtn = document.getElementsByClassName('closeBtn')[0];
+const modals = document.getElementsByClassName("modal");
+const modalTriggers = document.getElementsByClassName("modal-trigger");
+const triggerArray = Array.from(modalTriggers).entries();
+const modalClose = document.getElementsByClassName("closeBtn");
+const openModal = document.getElementsByClassName("modal-open");
 
-// modalBtn.addEventListener('click', openModal = () => {
-//     // console.log(123);
-//     modal.style.display = 'block';
-// });
+for (let [index, trigger] of triggerArray) {
+  //   let triggerIndex = index;
+  toggleModal = () => {
+    modals[index].classList.toggle("modal-open");
+  };
 
-// closeBtn.addEventListener('click', closeModal = () => {
-//     modal.style.display = 'none';
-// })
+  trigger.addEventListener("click", toggleModal);
+  modalClose[index].addEventListener("click", toggleModal);
 
-// window.addEventListener('click', clickOutside = (e) => {
-//     if (e.target == modal) {
-//         modal.style.display = 'none';
-//     }
-// });
+  window.addEventListener("click", (event) => {
+    if (event.target.closest(".modal")) {
+      modals[index].classList.remove("modal-open");
+      // console.log("haha");
+    }
+  })
 
-const modalTriggers = document.querySelectorAll('.modal-trigger');
-const modalClose = document.querySelectorAll('.closeBtn');
-
-Array.from(modalTriggers).forEach(trigger => {
-    trigger.addEventListener('click', function(e) {
-        e.preventDefault();
-        const modalName = trigger.dataset.modal;
-        const modal = document.querySelector('.' + modalName);
-        modal.classList.add('modal-open');
-    });
-});
-
-Array.from(modalClose).forEach(closeBtn => {
-    closeBtn.addEventListener('click', function() {
-        this.closest('.modal').classList.remove('modal-open');
-    });
-});
-
+  window.addEventListener("keydown", (e) => {
+    if (e.keyCode == 27) {
+      modals[index].classList.remove("modal-open");
+    }
+  });
+}
