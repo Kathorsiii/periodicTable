@@ -38,9 +38,14 @@ MADE ON JUNE 22, 2020 */
     "rubidium stronium yttrium zirconium niobium molybdenum technetium rethenium rhodium palladium silver cadmium indium tin antimony tellurium iodine xenon"
     "cesium barium asterisk-one hafnium tantalum tungsten rhenium osmium iridium platinum gold mercury thallium lead bismuth polonium astatine radon"
     "francium radium asterisk-two rutherfordium dubnium seaborgium bohrium hassium meitnerium darmstadtium roentgenium copernicium nihonium flerovium moscovium livermorium tennessine oganesson"
-    /* ". . . . . . . . . . . . . . . . . ." */
+    "space space space space space space space space space space space space space space space space space space"
     ". . asterisk-one-one lanthanum cerium praseodymium neodymium promethium samarium europium gadolinium terbium dysprosium holmium erbium thulium ytterbium lutetium"
     ". . asterisk-two-two actinium thorium proctactinium uranium neptunium plutonium americium curium berkelium californium einsteinium fermium mendelevium nobelium lawrencium";
+}
+
+.space {
+  grid-area: space;
+  /* background: coral; */
 }
 
 .info {
